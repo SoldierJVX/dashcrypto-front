@@ -1,40 +1,15 @@
-<div class="columns">
-    <div class="column is-one-fifth">
+<div fxLayout="row" fxLayoutAlign="center center" >
+  <mat-card>
+    <div fxLayout="column" fxLayoutAlign="space-around center" >
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Login</mat-label>
+        <input matInput placeholder="Ex. Pizza">
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Ex. Pizza">
+      </mat-form-field>
+      <button mat-raised-button (click)="goToDashboard()">Login</button>
     </div>
-    <div class="column">
-        <div class="card">
-            <div class="card-content">  
-            <div class="content">
-                <div class="field">
-                    <p class="control has-icons-left has-icons-right">
-                      <input class="input" type="email" placeholder="Email">
-                      <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                      </span>
-                      <span class="icon is-small is-right">
-                        <i class="fas fa-check"></i>
-                      </span>
-                    </p>
-                  </div>
-                  <div class="field">
-                    <p class="control has-icons-left">
-                      <input class="input" type="password" placeholder="Password">
-                      <span class="icon is-small is-left">
-                        <i class="fas fa-lock"></i>
-                      </span>
-                    </p>
-                  </div>
-                  <div class="field">
-                    <p class="control is-flex is-justify-content-center">
-                      <button class="button is-success" (click)="goToDashboard()">
-                        Login
-                      </button>
-                    </p>
-                  </div>
-            </div>
-            </div>
-        </div>
-    </div>
-    <div class="column is-one-fifth">
-    </div>
+  </mat-card>
 </div>
